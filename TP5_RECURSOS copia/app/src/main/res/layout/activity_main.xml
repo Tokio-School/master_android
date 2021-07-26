@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wellcome_course"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+    <TextView
+        android:id="@+id/text_java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin_top"
+        android:textSize="@dimen/body"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_xml"
+        tools:text="texto dinámico o variable" />
+
+    <TextView
+        android:id="@+id/formatted_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin_top"
+        android:layout_marginStart="@dimen/min_margin_screen"
+        android:layout_marginEnd="@dimen/min_margin_screen"
+        android:gravity="center"
+        android:textColor="@color/color_alpha"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_java"
+        tools:text="texto con formato dinámico o variable" />
+
+    <TextView
+        android:id="@+id/plurals_zero_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/high_margin_top"
+        android:layout_marginStart="@dimen/min_margin_screen"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formatted_text"
+        tools:text="plural de cero libros" />
+
+    <TextView
+        android:id="@+id/plurals_two_book"
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin_top"
+        android:layout_marginStart="@dimen/min_margin_screen"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plurals_zero_book"
+        tools:text="plural de 2 libros" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:entries="@array/android_versions"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_spinner"
+        android:layout_marginTop="@dimen/high_margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/plurals_two_book"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Spinner
+        android:id="@+id/spinner_java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_spinner"
+        android:layout_marginTop="@dimen/small_margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

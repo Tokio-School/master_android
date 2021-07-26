@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium_margin_top">25dp</dimen>
+    <dimen name="small_margin_top">8dp</dimen>
+    <dimen name="high_margin_top">40dp</dimen>
+    <dimen name="min_margin_screen">16dp</dimen>
+    <dimen name="match_constraint">0dp</dimen>
+    <dimen name="margin_start_spinner">25dp</dimen>
+    <dimen name="title">24sp</dimen>
+    <dimen name="body">14sp</dimen>
+</resources>
