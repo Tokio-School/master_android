@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">TP5 Recursos</string>
-    <string name="wellcome_course">Bienvenidos al Master en Tokio</string>
-    <string name="wellcome_course_format">Bienvenidos al Master de: %1$s, presentado por: %2$s y de %3$d horas</string>
-</resources>

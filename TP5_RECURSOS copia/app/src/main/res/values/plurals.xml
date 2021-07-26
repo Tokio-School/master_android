@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <plurals name="books_found">
-        <item quantity="one">One book found.</item>
-        <item quantity="other">%d songs found.</item>
-    </plurals>
-</resources>
