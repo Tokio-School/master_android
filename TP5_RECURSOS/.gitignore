@@ -1,8 +1,3 @@
-modules.xml
-projectsTokio.iml
-runConfigurations.xml
-vcs.xml
-workspace.xml
 *.iml
 .gradle
 /local.properties
@@ -20,5 +15,3 @@ workspace.xml
 local.properties
 /.idea/jarRepositories.xml
 /.idea/vcs.xml
-*.xml
-.name
