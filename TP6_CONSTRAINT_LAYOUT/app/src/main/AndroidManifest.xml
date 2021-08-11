@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TP6_CONSTRAINT_LAYOUT">
-        <activity android:name=".examples.OnboardingExample"></activity>
+        <activity android:name=".examples.OnboardingExample"/>
         <activity android:name=".examples.ChainConstraints" />
         <activity android:name=".examples.BarrierConstraint" />
         <activity android:name=".examples.SimpleConstraint" />
