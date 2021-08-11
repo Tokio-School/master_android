@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".examples.ChainConstraints">
+
+    <!--CHAIN HORIZONTAL-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chain_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/horizontal_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="TEXTO 1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/horizontal_text_2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/horizontal_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="TEXTO 2"
+            app:layout_constraintBottom_toBottomOf="@+id/horizontal_text_1"
+            app:layout_constraintEnd_toStartOf="@+id/horizontal_text_3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/horizontal_text_1"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_text_1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/horizontal_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="TEXTO 3"
+            app:layout_constraintBottom_toBottomOf="@+id/horizontal_text_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/horizontal_text_2"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_text_1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--CHAIN VERTICAL-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chain_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chain_horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/chain_vertical_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VERTICAL 1"
+            app:layout_constraintBottom_toTopOf="@+id/chain_vertical_text_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/chain_vertical_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VERTICAL 2"
+            app:layout_constraintBottom_toTopOf="@+id/chain_vertical_text_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chain_vertical_text_1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/chain_vertical_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VERTICAL 3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chain_vertical_text_2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--CHAIN HORIZONTAL Y VERTICAL-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chain_horizontal_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chain_vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/chain_horizontal_vertical_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VERTICAL 1"
+            app:layout_constraintBottom_toTopOf="@+id/chain_horizontal_vertical_centro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/chain_horizontal_vertical_centro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CENTRO"
+            app:layout_constraintBottom_toTopOf="@+id/chain_vertical_text2"
+            app:layout_constraintEnd_toStartOf="@+id/chain_horizontal_derecha"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/chain_horizontal_izquierda"
+            app:layout_constraintTop_toBottomOf="@+id/chain_horizontal_vertical_text1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/chain_horizontal_izquierda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HORIZONTAL IZQ"
+            app:layout_constraintBottom_toBottomOf="@+id/chain_horizontal_vertical_centro"
+            app:layout_constraintEnd_toStartOf="@+id/chain_horizontal_vertical_centro"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/chain_horizontal_vertical_centro" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/chain_horizontal_derecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HORIZONTAL DER"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/chain_horizontal_vertical_centro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chain_horizontal_vertical_centro"
+            app:layout_constraintTop_toTopOf="@+id/chain_horizontal_vertical_centro" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/chain_vertical_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HORIZONTAL-VERTICAL"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chain_horizontal_vertical_centro" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

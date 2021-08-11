@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TP6_CONSTRAINT_LAYOUT</string>
+    <string name="simple_anchor_constraint">ANCLAJES CONSTRAINT</string>
+    <string name="onboarding_page_constraint">"EJEMPLO LAYOUT "</string>
+    <string name="chain_style_constraint">EJEMPLO CHAINS</string>
+    <string name="barrier_constraint">EJEMPLO BARRIER</string>
+    <string name="btn_izquierdo">BTN IZQ</string>
+    <string name="btn_derecho">BTN DERECHO</string>
+    <string name="simple_ejemplo_titulo">Soy el título</string>
+    <string name="onboarding_title">Find a Roomie!</string>
+    <string name="onboariding_subtitulo">We\'ve helped millions across the nation find their perfect match… and you\'re next!</string>
+    <string name="onboarding_skip_btn">Skip</string>
+    <string name="onboarding_next_btn">Next</string>
+</resources>
