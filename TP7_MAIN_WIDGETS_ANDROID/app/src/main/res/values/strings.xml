@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TP7_MAIN_WIDGETS_ANDROID</string>
+    <string name="pera">Pera</string>
+    <string name="manzana">Manzana</string>
+    <string name="melocoton">Melocoton</string>
+    <string name="sandia">Sandía</string>
+    <string name="melon">Melón</string>
+    <string name="cerezas">Cerezas</string>
 </resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Si no externalizamos el String, cuando se traduzca esta lista no lo tendra-->
+    <string-array name="spinner_list">
+        <item>Ice Cream Sandwich</item>
+        <item>Jelly Bean</item>
+        <item>kitkat</item>
+        <item>Lollipop</item>
+        <item>Marhmallow</item>
+        <item>Nougat</item>
+        <item>Oreo</item>
+        <item>Pie</item>
+    </string-array>
+
+    <!--IMPLEMENTACIÓN CON EXTERNALIZACIÓN DE LOS STRINGS-->
+    <string-array name="lista_frutas">
+        <item>@string/pera</item>
+        <item>@string/manzana</item>
+        <item>@string/melocoton</item>
+        <item>@string/sandia</item>
+        <item>@string/melon</item>
+        <item>@string/cerezas</item>
+    </string-array>
+</resources>
