@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 
 import com.tokioschol.tp7_main_widgets_android.databinding.ActivityMainBinding;
 import com.tokioschol.tp7_main_widgets_android.widgets.CardViewActivity;
+import com.tokioschol.tp7_main_widgets_android.widgets.InputLayoutActivity;
 import com.tokioschol.tp7_main_widgets_android.widgets.SpinnerActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.activitySpinner.setOnClickListener(view -> startActivity(new Intent(this, SpinnerActivity.class)));
         binding.activityCardView.setOnClickListener(view -> startActivity(new Intent(this, CardViewActivity.class)));
+        binding.activityInputLayout.setOnClickListener(view-> startActivity(new Intent(this, InputLayoutActivity.class)));
 
     }
 }
