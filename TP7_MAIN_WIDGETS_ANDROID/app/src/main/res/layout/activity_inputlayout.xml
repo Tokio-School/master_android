@@ -38,6 +38,7 @@
         app:startIconDrawable="@drawable/ic_baseline_done_24"
         android:hint="Contraseña"
         app:errorEnabled="true"
+        app:suffixText="password"
         app:hintAnimationEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
