@@ -29,18 +29,6 @@
         app:layout_constraintWidth_percent="0.4" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_viewBinding_bind_fragment"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-
-        android:text="VIEWBINDING BIND"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_viewBinding_inflate_fragment"
-        app:layout_constraintWidth_percent="0.4" />
-
-    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_dababinding_fragment"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
@@ -48,7 +36,7 @@
         android:text="Databinding"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_viewBinding_bind_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/btn_viewBinding_inflate_fragment"
         app:layout_constraintWidth_percent="0.4" />
 
     <FrameLayout
