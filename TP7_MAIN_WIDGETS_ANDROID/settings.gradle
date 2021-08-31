@@ -1,0 +1,2 @@
+rootProject.name = "TP7_MAIN_WIDGETS_ANDROID"
+include ':app'

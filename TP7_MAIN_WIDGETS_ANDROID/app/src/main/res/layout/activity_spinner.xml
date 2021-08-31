@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".widgets.SpinnerActivity">
+
+        <!--SPINNER DEFINIDO POR XML-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/spinner_estatico_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPINNER DEFINIDO EN XML"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner_dato_estatico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:entries="@array/spinner_list"
+            android:overlapAnchor="false"
+            android:spinnerMode="dialog"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_estatico_titulo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/seleccion_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/spinner_dato_estatico"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_dato_estatico"
+            tools:text="Aqui muestro el valor seleccionado" />
+
+        <!--SPINNER DEFINIDO DE FORMA DINAMICA CON DROPDOWN-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/spinner_dinamico_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="SPINNER DINAMICO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seleccion_spinner" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_dinamico"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:overlapAnchor="false"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_dinamico_titulo"
+            app:layout_constraintWidth_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

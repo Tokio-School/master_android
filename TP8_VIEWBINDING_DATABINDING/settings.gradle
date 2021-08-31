@@ -1,0 +1,2 @@
+rootProject.name = "TP8_VIEWBINDING_DATABINDING"
+include ':app'

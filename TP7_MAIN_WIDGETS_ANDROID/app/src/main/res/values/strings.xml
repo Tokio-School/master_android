@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TP7_MAIN_WIDGETS_ANDROID</string>
+    <string name="pera">Pera</string>
+    <string name="manzana">Manzana</string>
+    <string name="melocoton">Melocoton</string>
+    <string name="sandia">Sandía</string>
+    <string name="melon">Melón</string>
+    <string name="cerezas">Cerezas</string>
+    <string name="title_activity_buttons">Buttons</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="cardview_subtitle">Subtitle subtitle subtitle subtitle subtitle subtitle subtitle  subtitle subtitle subtitle subtitle subtitle</string>
+</resources>
