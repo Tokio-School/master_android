@@ -16,7 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".widgets.ButtonsActivity"/>
         <activity android:name=".widgets.CardViewActivity" />
         <activity android:name=".widgets.SpinnerActivity" />
         <activity android:name=".widgets.InputLayoutActivity" />

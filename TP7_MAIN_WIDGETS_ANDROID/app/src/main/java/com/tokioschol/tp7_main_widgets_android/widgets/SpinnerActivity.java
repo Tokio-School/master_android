@@ -24,9 +24,6 @@ public class SpinnerActivity extends AppCompatActivity {
         spinnerDatosEstaticosXml();
         spinnerDinamico();
 
-        //todo mirar de hacer
-        //https://medium.com/vattenfall-tech/android-spinner-customizations-8b4980fb0ee3
-
     }
 
     private void spinnerDinamico() {
