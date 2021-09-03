@@ -19,6 +19,7 @@ android {
     //1  Activar en el modulo el viewBinding
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 
     buildTypes {

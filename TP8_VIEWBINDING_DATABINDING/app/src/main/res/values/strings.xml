@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TP8_VIEWBINDING_DATABINDING</string>
+    <string name="databinding_lastname">LastName: %s</string>
+    <string name="databinding_notName">Nombre sin registrar</string>
 </resources>
