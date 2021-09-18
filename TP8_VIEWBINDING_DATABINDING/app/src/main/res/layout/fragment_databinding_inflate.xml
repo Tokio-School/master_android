@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="user"
             type="com.tokioschol.tp8_viewbinding_databinding.databinding.domain.UserModel" />
@@ -31,6 +32,7 @@
             android:id="@+id/databinding_lastName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:drawableTint="@color/teal_200"
             android:layout_marginTop="24dp"
             android:text="@{@string/databinding_lastname(user.lastName)}"
             android:textColor="@color/white"
@@ -38,6 +40,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/databinding_username"
             tools:text="DATABINDING INFLATE" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            app:colorView="@{user.name != null ?@color/green:@color/red}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/databinding_lastName"
+            app:srcVectorDrawable="@{user.name != null ?@drawable/ic_satisfied:@drawable/ic_dissatisfied}"
+            tools:srcCompat="@drawable/ic_dissatisfied" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
