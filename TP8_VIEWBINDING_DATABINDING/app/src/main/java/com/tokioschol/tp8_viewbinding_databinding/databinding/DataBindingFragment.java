@@ -35,7 +35,6 @@ public class DataBindingFragment extends Fragment {
         return binding.getRoot();
     }
 
-
     @BindingAdapter(value = {"app:colorView","app:srcVectorDrawable"},requireAll = true)
     public static void setSrcVector(AppCompatImageView view, @ColorRes int color, Drawable resource){
         if(view!=null){
