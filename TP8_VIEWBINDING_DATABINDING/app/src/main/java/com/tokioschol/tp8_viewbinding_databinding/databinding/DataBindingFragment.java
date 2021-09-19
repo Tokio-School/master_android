@@ -33,6 +33,7 @@ public class DataBindingFragment extends Fragment {
         //Set data al layout-objeto binding-
         binding.setUser(provideUser());
         return binding.getRoot();
+
     }
 
     @BindingAdapter(value = {"app:colorView","app:srcVectorDrawable"},requireAll = true)
