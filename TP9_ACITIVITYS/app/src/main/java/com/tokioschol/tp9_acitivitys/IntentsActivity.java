@@ -24,13 +24,8 @@ public class IntentsActivity extends AppCompatActivity {
         binding = ActivityIntentsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         super.onCreate(savedInstanceState);
-        binding.intentCrearAlarma.setOnClickListener(v ->
-                openWifiSettings()
-                //createAlarm("Poner alarma", 23, 45)
-        );
+        binding.intentCrearAlarma.setOnClickListener(v -> createAlarm("Poner alarma", 23, 45));
         binding.intentCrearEnviarEmail.setOnClickListener(view -> composeEmail(new String[]{"manelcc72@gmail.com"},"sujeto"));
-
-
     }
 
     public void openWifiSettings() {
@@ -40,6 +35,13 @@ public class IntentsActivity extends AppCompatActivity {
         }
     }
 
+    public void openWebPage(String url) {
+        Uri webpage = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+    }
 
 
     public void createAlarm(String message, int hour, int minutes) {
