@@ -18,10 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SimpleDateActivity"/>
+        <activity android:name=".IntentsActivity"/>
+        <activity android:name=".ObjectDateActivity"/>
+        <activity android:name=".ForResultActivity"/>
 
-        <activity android:name=".IntentsActivity">
-
-        </activity>
     </application>
 
 </manifest>

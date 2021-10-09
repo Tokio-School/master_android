@@ -12,9 +12,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="INTENTS"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/simple_date_activity_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/simple_date_activity_btn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR DATOS SIMPLES ACTIVITY"
+        app:layout_constraintBottom_toTopOf="@+id/activity_send_object_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intents_btn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/activity_send_object_btn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR OBJETOS A NUEVA ACTIVITY"
+        app:layout_constraintBottom_toTopOf="@+id/start_activity_result_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simple_date_activity_btn" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/start_activity_result_btn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STARTACTIVITY FOR RESULT"
+        android:onClick="desdeLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_send_object_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

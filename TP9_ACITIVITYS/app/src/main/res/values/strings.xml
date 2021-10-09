@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TP9_ACITIVITYS</string>
+    <string name="user_name">El nombre del usuario es %1$s, el apellido %2$s y actualmente tiene %3$d</string>
 </resources>
