@@ -38,6 +38,8 @@
         android:hint="Contraseña"
         app:errorEnabled="true"
         app:suffixText="password"
+        app:endIconMode="clear_text"
+        app:endIconDrawable="@drawable/baseline_add_to_drive_black_24dp"
         app:hintAnimationEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,6 +53,31 @@
             android:backgroundTint="@color/white"
             android:inputType="numberDecimal"
             android:singleLine="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_filled2"
+        android:layout_width="0dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="desplegable"
+        app:errorEnabled="true"
+        app:endIconMode="dropdown_menu"
+
+        app:hintAnimationEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout_filled">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompletetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
 

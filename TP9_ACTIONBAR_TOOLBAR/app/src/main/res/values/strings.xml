@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TP9_ACTIONBAR_TOOLBAR</string>
+    <string name="simple_actionBar">ACTIONBAR</string>
+    <string name="simple_toolbar">TOOLBAR</string>
+    <string name="toolbar_collapsing">collapsing toolbar</string>
+    <string name="material_toolbar">MATERIAL TOOLBAR</string>
+    <string name="activity_title">ActionBar</string>
+    <string name="shopping_cart">carrito compra</string>
+</resources>
