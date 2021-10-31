@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TP9_ACTIONBAR_TOOLBAR">
+        android:theme="@style/ThemeTP9">
         <activity
             android:name=".features.toolbar.ToolbarMenuActivity"
             android:exported="true" />
@@ -25,6 +25,7 @@
             android:name=".features.material.MaterialCollapsingActivity"
             android:exported="true" />
         <activity
+            android:theme="@style/Theme.TP9_ACTIONBAR_TOOLBAR"
             android:name=".features.toolbar.ToolbarActivity"
             android:exported="true" />
         <activity
@@ -34,7 +35,11 @@
             android:name=".features.actionbar.ActionBarActivity"
             android:theme="@style/Theme.TP9_ACTIONBAR"
             android:label="@string/activity_title"
-            android:exported="false" />
+            android:exported="false" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

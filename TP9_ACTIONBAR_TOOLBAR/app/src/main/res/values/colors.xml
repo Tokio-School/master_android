@@ -13,4 +13,10 @@
     <color name="red_700">#C2185B</color>
     <color name="accent_200">#80DEEA</color>
     <color name="accent_700">#0097A7</color>
+
+    <color name="blue_200">#90CAF9</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_700">#1976D2</color>
+    <color name="accent_toolbar_200">#FFCC80</color>
+    <color name="accent_toolbar_700">#FFA000</color>
 </resources>

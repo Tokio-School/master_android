@@ -6,4 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".features.toolbar.ToolbarActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ActionBarThemeOverlay"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ActionModeOverflowMenu"
+        app:title="Soy la toolbar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

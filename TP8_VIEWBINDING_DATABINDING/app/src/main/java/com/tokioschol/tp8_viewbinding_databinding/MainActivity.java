@@ -2,6 +2,7 @@ package com.tokioschol.tp8_viewbinding_databinding;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -28,9 +29,11 @@ public class MainActivity extends AppCompatActivity {
                         .commitAllowingStateLoss());
 
         binding.btnDababindingFragment.setOnClickListener(v ->
-                getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(binding.container.getId(), new DataBindingFragment())
-                        .commitAllowingStateLoss());
+                startActivity(new Intent(this,DataBindingObservable.class)));
+
+//                getSupportFragmentManager()
+//                        .beginTransaction()
+//                        .replace(binding.container.getId(), new DataBindingFragment())
+//                        .commitAllowingStateLoss());
     }
 }
