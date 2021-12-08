@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tokioschol.tp9_acitivitys">
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
 
     <application
         android:allowBackup="true"
@@ -16,6 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SimpleDateActivity"/>
+        <activity android:name=".IntentsActivity"/>
+        <activity android:name=".ObjectDateActivity"/>
+        <activity android:name=".ForResultActivity"/>
+
     </application>
 
 </manifest>

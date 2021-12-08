@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tokioschol.tp9_actionbar_toolbar">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/ThemeTP9">
+        <activity
+            android:name=".features.toolbar.ToolbarMenuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".features.toolbar.ToolbarCollapsingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".features.material.MaterialToolbarContextual"
+            android:exported="true" />
+        <activity
+            android:name=".features.material.MaterialToolbarMenu"
+            android:exported="true" />
+        <activity
+            android:name=".features.material.MaterialCollapsingActivity"
+            android:exported="true" />
+        <activity
+            android:theme="@style/Theme.TP9_ACTIONBAR_TOOLBAR"
+            android:name=".features.toolbar.ToolbarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".features.material.MaterialToolbarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".features.actionbar.ActionBarActivity"
+            android:theme="@style/Theme.TP9_ACTIONBAR"
+            android:label="@string/activity_title"
+            android:exported="false" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
