@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/shoppingcart"
+        android:icon="@drawable/ic_shopping_cart"
+        app:showAsAction="ifRoom"
+        android:title="compra 1"/>
+
+    <item android:id="@+id/shoppingcart2"
+        android:icon="@drawable/ic_shopping_cart"
+        app:showAsAction="ifRoom"
+        android:title="compra 2"/>
+
+    <item android:id="@+id/shoppingcart3"
+        android:icon="@drawable/ic_shopping_cart"
+        app:showAsAction="always"
+        android:title="compra 3"/>
+
+    <item android:id="@+id/shoppingcart4"
+        android:icon="@drawable/ic_shopping_cart"
+        app:showAsAction="always"
+        android:title="compra 4"/>
+
+    <item android:id="@+id/shoppingcart5"
+        android:icon="@drawable/ic_shopping_cart"
+        app:showAsAction="always"
+        android:title="compra 5"/>
+
+</menu>

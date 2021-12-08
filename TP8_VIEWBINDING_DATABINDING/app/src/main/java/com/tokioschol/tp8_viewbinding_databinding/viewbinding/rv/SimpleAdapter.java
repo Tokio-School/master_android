@@ -30,6 +30,7 @@ public class SimpleAdapter extends RecyclerView.Adapter<SimpleViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull SimpleViewHolder holder, int position) {
+        //Bindeamos para renderizar el item que recibimos. Para ello recogemos la posición de la lista.
         holder.bind(items.get(position));
     }
 
@@ -38,3 +39,9 @@ public class SimpleAdapter extends RecyclerView.Adapter<SimpleViewHolder> {
         return items.size();
     }
 }
+
+
+
+
+
+
