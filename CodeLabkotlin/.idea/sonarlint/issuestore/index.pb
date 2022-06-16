@@ -30,3 +30,13 @@ F
 app/proguard-rules.pro,9/e/9e08934d811afe28fbc77aaa3c0d747b94348db9
 ‚
 Rapp/src/androidTest/java/com/tokioschol/codelabkotlin/ExampleInstrumentedTest.java,9/a/9a7f08f5d5b9b538528da974c7961dcdff8b336d
+~
+Napp/src/main/java/com/tokioschol/codelabkotlin/data/response/UserResponse.java,b/b/bb35c95b341118f0f80bb25246f9beba390ea630
+z
+Japp/src/main/java/com/tokioschol/codelabkotlin/data/utils/RandonUtils.java,4/6/4649780bb1e957bf0830d70932804b0d94bdc720
+o
+?app/src/main/java/com/tokioschol/codelabkotlin/domain/User.java,6/e/6eb74d08149d13495849a48a50e792d799b8aa21
+‚
+Rapp/src/main/java/com/tokioschol/codelabkotlin/data/repository/RepositoryImpl.java,6/e/6e7e98f94d8d36d683da4273c45468ef23a252bb
+~
+Napp/src/main/java/com/tokioschol/codelabkotlin/data/repository/Repository.java,5/8/58f2d9b326e83b8cafcdf3d29e05e06bd3cb27f8
