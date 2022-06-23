@@ -22,6 +22,7 @@ object NetworkModule {
     private val baseUrl = "https://01394d44-8918-4a1d-8059-629c50c25e87.mock.pstmn.io/"
 
 
+
     @Provides
     fun providesHostResources(builder: Retrofit.Builder): Retrofit =
         builder.baseUrl(baseUrl).build()

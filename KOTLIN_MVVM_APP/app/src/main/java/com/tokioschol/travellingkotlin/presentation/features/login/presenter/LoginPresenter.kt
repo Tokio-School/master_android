@@ -10,12 +10,13 @@ interface LoginPresenter {
     interface Presenter:BasePresenter<BaseView>{
         //la implementacion del presenter
         fun logIn(userName:String, password:String)
+        fun logInFaceBook(token:String)
         fun attachView(view: LoginPresenter.View)
     }
 
     interface View: BaseView{
-        //Todo el resultado a mostrar en la vista
         fun logInResult(user:User)
+        fun loginResultFacebook(result: User)
         fun showErrorLogIn(it: Throwable)
     }
 

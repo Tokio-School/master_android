@@ -10,21 +10,32 @@ import javax.inject.Inject
 
 
 class LoginPresenterImpl @Inject constructor(
-    private val loginRespository: LoginRespository
-):LoginPresenter.Presenter {
+    private val loginRespository: LoginRespository,
+) : LoginPresenter.Presenter {
 
     val scope: CoroutineScope = CoroutineScope(Dispatchers.Main + SupervisorJob())
-    lateinit var view:LoginPresenter.View
+    lateinit var view: LoginPresenter.View
 
     override fun logIn(userName: String, password: String) {
         scope.launch {
-            flow {
-                emit(loginRespository.logIn(userName, password))
-            }.flowOn(Dispatchers.IO)
+            loginRespository.logIn(userName, password).flowOn(Dispatchers.IO)
                 .onStart { view.showProgress() }
                 .onCompletion { view.hideProgress() }
+                .catch {
+                    view.showErrorLogIn(it) }
+                .collect {
+                    view.logInResult(it) }
+        }
+    }
+
+    override fun logInFaceBook(token: String) {
+        scope.launch {
+            flow {
+                emit(loginRespository.logInFaceBook(token))
+            }.onStart { view.showProgress() }
+                .onCompletion { view.hideProgress() }
                 .catch { view.showErrorLogIn(it) }
-                .collect { view.logInResult(it) }
+                .collect { view.loginResultFacebook(it) }
         }
     }
 
