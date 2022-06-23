@@ -1,0 +1,471 @@
+{
+    "totalCount": 1217,
+    "results": [
+        {
+            "id": 129129,
+            "name": "Le Meridien Barcelona",
+            "starRating": 5,
+            "address": {
+                "streetAddress": "La Rambla, La 111",
+                "extendedAddress": "",
+                "locality": "Barcelona",
+                "postalCode": "08002",
+                "region": "",
+                "countryName": "Spain",
+                "countryCode": "es",
+                "obfuscate": false
+            },
+            "guestReviews": {
+                "unformattedRating": 4.2,
+                "rating": "4,2",
+                "total": 555,
+                "scale": 5,
+                "badge": "very-good",
+                "badgeText": "Muy bueno"
+            },
+            "ratePlan": {
+                "price": {
+                    "current": "303 €",
+                    "exactCurrent": 303.12
+                }
+            },
+            "neighbourhood": "El Gòtic",
+            "coordinate": {
+                "lat": 41.38371,
+                "lon": 2.17111
+            },
+            "providerType": "LOCAL",
+            "supplierHotelId": 17519,
+            "isAlternative": false,
+            "optimizedThumbUrls": {
+                "srpDesktop": "https://exp.cdn-hotels.com/hotels/1000000/20000/17600/17519/c0b73e9d_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            }
+        },
+        {
+            "id": 129141,
+            "name": "Claris Hotel & Spa GL",
+            "starRating": 5,
+            "address": {
+                "streetAddress": "Pau Claris, 150",
+                "extendedAddress": "",
+                "locality": "Barcelona",
+                "postalCode": "08009",
+                "region": "",
+                "countryName": "Spain",
+                "countryCode": "es",
+                "obfuscate": false
+            },
+            "guestReviews": {
+                "unformattedRating": 4.4,
+                "rating": "4,4",
+                "total": 1003,
+                "scale": 5,
+                "badge": "fabulous",
+                "badgeText": "Fabuloso"
+            },
+            "ratePlan": {
+                "price": {
+                    "current": "239 €",
+                    "exactCurrent": 238.71,
+                    "old": "299 €"
+                }
+                
+            },
+            "neighbourhood": "Eixample",
+           
+            "coordinate": {
+                "lat": 41.3942,
+                "lon": 2.16522
+            },
+            "providerType": "LOCAL",
+            "supplierHotelId": 905532,
+            "isAlternative": false,
+            "optimizedThumbUrls": {
+                "srpDesktop": "https://exp.cdn-hotels.com/hotels/1000000/910000/905600/905532/31944ed4_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            }
+        },
+        {
+            "id": 221323,
+            "name": "Hotel SOFIA Barcelona, in The Unbound Collection by Hyatt",
+            "starRating": 5,
+            
+            "address": {
+                "streetAddress": "Plaza de Pio XII, 4",
+                "extendedAddress": "",
+                "locality": "Barcelona",
+                "postalCode": "08028",
+                "region": "",
+                "countryName": "Spain",
+                "countryCode": "es",
+                "obfuscate": false
+            },
+            "guestReviews": {
+                "unformattedRating": 4.7,
+                "rating": "4,7",
+                "total": 243,
+                "scale": 5,
+                "badge": "exceptional",
+                "badgeText": "Excepcional"
+            },
+            
+            "ratePlan": {
+                "price": {
+                    "current": "212 €",
+                    "exactCurrent": 211.57
+                },
+                "features": {
+                    "paymentPreference": false,
+                    "noCCRequired": false
+                }
+            },
+            "neighbourhood": "Les Corts",
+            
+            "coordinate": {
+                "lat": 41.386697,
+                "lon": 2.123055
+            },
+            "providerType": "MULTISOURCE",
+            "supplierHotelId": 17348,
+            "isAlternative": false,
+            "optimizedThumbUrls": {
+                "srpDesktop": "https://exp.cdn-hotels.com/hotels/1000000/20000/17400/17348/a6ca9346_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            }
+        },
+        {
+            "id": 665806,
+            "name": "Ocean Drive Barcelona",
+            "starRating": 5,
+            "address": {
+                "streetAddress": "Calle Aragon 300",
+                "extendedAddress": "",
+                "locality": "Barcelona",
+                "postalCode": "08009",
+                "region": "",
+                "countryName": "Spain",
+                "countryCode": "es",
+                "obfuscate": false
+            },
+            "guestReviews": {
+                "unformattedRating": 4.5,
+                "rating": "4,5",
+                "total": 253,
+                "scale": 5,
+                "badge": "superb",
+                "badgeText": "Increíble"
+            },
+           
+            "ratePlan": {
+                "price": {
+                    "current": "297 €",
+                    "exactCurrent": 296.56
+                },
+                "features": {
+                    "paymentPreference": false,
+                    "noCCRequired": false
+                }
+            },
+            "neighbourhood": "Dreta de l'Eixample",
+           
+            "coordinate": {
+                "lat": 41.39381,
+                "lon": 2.16748
+            },
+            "providerType": "LOCAL",
+            "supplierHotelId": 17294785,
+            "isAlternative": false,
+            "optimizedThumbUrls": {
+                "srpDesktop": "https://exp.cdn-hotels.com/hotels/18000000/17300000/17294800/17294785/0388e19f_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            }
+        },
+        {
+            "id": 97424640,
+            "name": "Mandarin Oriental, Barcelona",
+            "starRating": 5,
+            
+            "address": {
+                "streetAddress": "Passeig De Gracia, 38-40",
+                "extendedAddress": "",
+                "locality": "Barcelona",
+                "postalCode": "08007",
+                "region": "",
+                "countryName": "Spain",
+                "countryCode": "es",
+                "obfuscate": false
+            },
+            "guestReviews": {
+                "unformattedRating": 4.6,
+                "rating": "4,6",
+                "total": 142,
+                "scale": 5,
+                "badge": "superb",
+                "badgeText": "Increíble"
+            },
+           
+            "ratePlan": {
+                "price": {
+                    "current": "699 €",
+                    "exactCurrent": 699.06
+                },
+                "features": {
+                    "paymentPreference": false,
+                    "noCCRequired": false
+                }
+            },
+            "neighbourhood": "Eixample",
+            
+            "coordinate": {
+                "lat": 41.39099,
+                "lon": 2.16664
+            },
+            "providerType": "MULTISOURCE",
+            "supplierHotelId": 3013270,
+            "isAlternative": false,
+            "optimizedThumbUrls": {
+                "srpDesktop": "https://exp.cdn-hotels.com/hotels/4000000/3020000/3013300/3013270/0fc18926_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            }
+        },
+        {
+            "id": 172306,
+            "name": "Renaissance Barcelona Hotel",
+            "starRating": 5,
+            
+            "address": {
+                "streetAddress": "Pau Claris 122",
+                "extendedAddress": "",
+                "locality": "Barcelona",
+                "postalCode": "8009",
+                "region": "",
+                "countryName": "Spain",
+                "countryCode": "es",
+                "obfuscate": false
+            },
+            "guestReviews": {
+                "unformattedRating": 4.2,
+                "rating": "4,2",
+                "total": 350,
+                "scale": 5,
+                "badge": "very-good",
+                "badgeText": "Muy bueno"
+            },
+            
+            "ratePlan": {
+                "price": {
+                    "current": "290 €",
+                    "exactCurrent": 290.43
+                },
+                "features": {
+                    "paymentPreference": false,
+                    "noCCRequired": false
+                }
+            },
+            "neighbourhood": "Eixample",
+            
+            "coordinate": {
+                "lat": 41.39243,
+                "lon": 2.1675
+            },
+            "providerType": "LOCAL",
+            "supplierHotelId": 527165,
+            "isAlternative": false,
+            "optimizedThumbUrls": {
+                "srpDesktop": "https://exp.cdn-hotels.com/hotels/1000000/530000/527200/527165/483e84e3_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            }
+        },
+        {
+            "id": 598365,
+            "name": "Mercer Hotel Barcelona",
+            "starRating": 5,
+            
+            "address": {
+                "streetAddress": "Carrer dels Lledó, 7",
+                "extendedAddress": "",
+                "locality": "Barcelona",
+                "postalCode": "08002",
+                "region": "",
+                "countryName": "Spain",
+                "countryCode": "es",
+                "obfuscate": false
+            },
+            "guestReviews": {
+                "unformattedRating": 4.8,
+                "rating": "4,8",
+                "total": 168,
+                "scale": 5,
+                "badge": "exceptional",
+                "badgeText": "Excepcional"
+            },
+           
+            "ratePlan": {
+                "price": {
+                    "current": "362 €",
+                    "exactCurrent": 361.56
+                },
+                "features": {
+                    "paymentPreference": false,
+                    "noCCRequired": false
+                }
+            },
+            "neighbourhood": "Centro de Barcelona",
+            
+            "coordinate": {
+                "lat": 41.38258,
+                "lon": 2.17895
+            },
+            "providerType": "MULTISOURCE",
+            "supplierHotelId": 15291443,
+            "isAlternative": false,
+            "optimizedThumbUrls": {
+                "srpDesktop": "https://exp.cdn-hotels.com/hotels/16000000/15300000/15291500/15291443/3a3d02ae_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            }
+        },
+        {
+            "id": 311651,
+            "name": "W Barcelona",
+            "starRating": 5,
+            
+            "address": {
+                "streetAddress": "Plaça Rosa dels Vents, 1",
+                "extendedAddress": "",
+                "locality": "Barcelona",
+                "postalCode": "08039",
+                "region": "",
+                "countryName": "Spain",
+                "countryCode": "es",
+                "obfuscate": false
+            },
+            "guestReviews": {
+                "unformattedRating": 4.3,
+                "rating": "4,3",
+                "total": 1002,
+                "scale": 5,
+                "badge": "fabulous",
+                "badgeText": "Fabuloso"
+            },
+           
+            "ratePlan": {
+                "price": {
+                    "current": "309 €",
+                    "exactCurrent": 308.56
+                },
+                "features": {
+                    "paymentPreference": false,
+                    "noCCRequired": false
+                }
+            },
+            "neighbourhood": "Barceloneta",
+           
+            "coordinate": {
+                "lat": 41.36848,
+                "lon": 2.18919
+            },
+            "providerType": "LOCAL",
+            "supplierHotelId": 2578680,
+            "isAlternative": false,
+            "optimizedThumbUrls": {
+                "srpDesktop": "https://exp.cdn-hotels.com/hotels/3000000/2580000/2578700/2578680/9ef2c432_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            }
+        },
+        {
+            "id": 205185,
+            "name": "Grand Hotel Central",
+            "starRating": 5,
+           
+            "address": {
+                "streetAddress": "Via Laietana 30",
+                "extendedAddress": "",
+                "locality": "Barcelona",
+                "postalCode": "08003",
+                "region": "",
+                "countryName": "Spain",
+                "countryCode": "es",
+                "obfuscate": false
+            },
+            "guestReviews": {
+                "unformattedRating": 4.7,
+                "rating": "4,7",
+                "total": 1016,
+                "scale": 5,
+                "badge": "exceptional",
+                "badgeText": "Excepcional"
+            },
+           
+            "ratePlan": {
+                "price": {
+                    "current": "315 €",
+                    "exactCurrent": 315.27
+                },
+                "features": {
+                    "paymentPreference": false,
+                    "noCCRequired": false
+                }
+            },
+            "neighbourhood": "El Gòtic",
+            
+            "coordinate": {
+                "lat": 41.384917,
+                "lon": 2.177542
+            },
+            "providerType": "LOCAL",
+            "supplierHotelId": 1298369,
+            "isAlternative": false,
+            "optimizedThumbUrls": {
+                "srpDesktop": "https://exp.cdn-hotels.com/hotels/2000000/1300000/1298400/1298369/0c91bc7f_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            }
+        },
+        {
+            "id": 405902,
+            "name": "Hotel Bagues",
+            "starRating": 5,
+            
+            "address": {
+                "streetAddress": "Calle la Rambla, 105",
+                "extendedAddress": "",
+                "locality": "Barcelona",
+                "postalCode": "08002",
+                "region": "",
+                "countryName": "Spain",
+                "countryCode": "es",
+                "obfuscate": false
+            },
+            "guestReviews": {
+                "unformattedRating": 4.6,
+                "rating": "4,6",
+                "total": 493,
+                "scale": 5,
+                "badge": "superb",
+                "badgeText": "Increíble"
+            },
+           
+            "ratePlan": {
+                "price": {
+                    "current": "279 €",
+                    "exactCurrent": 279.22,
+                    "old": "347 €"
+                },
+                "features": {
+                    "paymentPreference": false,
+                    "noCCRequired": false
+                }
+            },
+            "neighbourhood": "El Gòtic",
+            
+            "coordinate": {
+                "lat": 41.38282,
+                "lon": 2.17166
+            },
+            "providerType": "MULTISOURCE",
+            "supplierHotelId": 3957300,
+            "isAlternative": false,
+            "optimizedThumbUrls": {
+                "srpDesktop": "https://exp.cdn-hotels.com/hotels/4000000/3960000/3957300/3957300/98e8f460_z.jpg?impolicy=fcrop&w=250&h=140&q=high"
+            }
+        }
+    ],
+    "pagination": {
+        "currentPage": 1,
+        "pageGroup": "EXPEDIA_IN_POLYGON",
+        "nextPageStartIndex": 25,
+        "nextPageNumber": 2,
+        "nextPageGroup": "EXPEDIA_IN_POLYGON"
+    }
+}
