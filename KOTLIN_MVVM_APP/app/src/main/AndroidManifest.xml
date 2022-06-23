@@ -17,7 +17,7 @@
         android:theme="@style/Theme.TravellingKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.MainActivity2"
+            android:name=".presentation.MainActivity"
             android:theme="@style/Theme.TravellingKotlin.NoActionBar"
             android:exported="true">
             <intent-filter>

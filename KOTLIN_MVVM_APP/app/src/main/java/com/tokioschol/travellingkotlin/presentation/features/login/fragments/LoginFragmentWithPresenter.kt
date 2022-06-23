@@ -48,10 +48,12 @@ class LoginFragmentWithPresenter : Fragment(R.layout.fragment_login), LoginPrese
     }
 
     override fun showProgress() {
-        binding.loginProgress.visibility = View.VISIBLE
+        binding.loginContentRoot.visibility = View.GONE
+        binding.animationView.visibility = View.VISIBLE
     }
 
     override fun hideProgress() {
-        binding.loginProgress.visibility = View.GONE
+        binding.loginContentRoot.visibility = View.VISIBLE
+        binding.animationView.visibility = View.GONE
     }
 }

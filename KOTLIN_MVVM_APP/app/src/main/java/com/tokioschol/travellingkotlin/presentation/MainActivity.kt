@@ -13,7 +13,7 @@ import com.tokioschol.travellingkotlin.presentation.core.extension.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
+class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private val binding by viewBinding(ActivityMainBinding::inflate)
 
