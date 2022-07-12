@@ -1,4 +1,4 @@
-package com.tokioschol.travellingkotlin.presentation.core.extension
+package com.tokioschol.travellingkotlin.core.extension
 import android.view.LayoutInflater
 import android.view.View
 

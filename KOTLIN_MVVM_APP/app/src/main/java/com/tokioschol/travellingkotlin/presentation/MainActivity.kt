@@ -2,14 +2,12 @@ package com.tokioschol.travellingkotlin.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.tokioschol.travellingkotlin.R
 
 import com.tokioschol.travellingkotlin.databinding.ActivityMainBinding
-import com.tokioschol.travellingkotlin.presentation.core.extension.viewBinding
+import com.tokioschol.travellingkotlin.core.extension.viewBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

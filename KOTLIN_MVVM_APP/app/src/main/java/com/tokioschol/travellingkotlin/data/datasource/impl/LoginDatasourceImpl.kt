@@ -13,7 +13,7 @@ class LoginDatasourceImpl @Inject constructor(
 ): LoginDatasource {
 
     override fun logIng(user:String, pass:String): Flow<UserResponse>  = flow {
-        delay(9000)
+        delay(5000)
         emit(apiLogin.logInUser(mapOf("usuario" to user, "password" to pass )))
     }
 

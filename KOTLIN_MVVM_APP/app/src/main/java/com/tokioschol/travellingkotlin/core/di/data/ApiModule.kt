@@ -1,4 +1,4 @@
-package com.tokioschol.travellingkotlin.data.core.di
+package com.tokioschol.travellingkotlin.core.di.data
 
 import com.tokioschol.travellingkotlin.data.api.ApiHotels
 import com.tokioschol.travellingkotlin.data.api.ApiLogin

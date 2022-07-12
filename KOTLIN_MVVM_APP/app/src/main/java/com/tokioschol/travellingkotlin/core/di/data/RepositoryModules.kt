@@ -1,4 +1,4 @@
-package com.tokioschol.travellingkotlin.data.core.di
+package com.tokioschol.travellingkotlin.core.di.data
 
 import com.tokioschol.travellingkotlin.data.repository.LoginRespositoryImpl
 import com.tokioschol.travellingkotlin.domain.repository.LoginRespository
