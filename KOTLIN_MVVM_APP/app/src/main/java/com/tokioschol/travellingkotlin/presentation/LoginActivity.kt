@@ -5,6 +5,8 @@ import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 import com.tokioschol.travellingkotlin.core.extension.viewBinding
 import com.tokioschol.travellingkotlin.databinding.ActivityLoginBinding
