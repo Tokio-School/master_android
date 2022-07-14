@@ -43,9 +43,7 @@ object NetworkModule {
 
     @Provides
     fun provideOkhttpClient(logging: HttpLoggingInterceptor, client: OkHttpClient.Builder): OkHttpClient {
-        if (BuildConfig.DEBUG) {
-            logging.setLevel(HttpLoggingInterceptor.Level.BASIC)
-        }
+            logging.setLevel(HttpLoggingInterceptor.Level.BODY)
         return client
             .connectTimeout(30, TimeUnit.SECONDS)
             .readTimeout(30, TimeUnit.SECONDS)

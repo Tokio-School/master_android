@@ -13,4 +13,5 @@
     <string name="login_text_btn">LOG-IN</string>
     <string name="login_hint_pass">Introduce un password</string>
     <string name="login_error_user">El email no es valido</string>
+    <string name="error_logIn_service">Ups, no hemos podido %s</string>
 </resources>

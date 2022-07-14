@@ -2,6 +2,7 @@ package com.tokioschol.travellingkotlin.core.extension
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
+import kotlinx.coroutines.channels.SendChannel
 
 /**
  * Combines this [LiveData] with another [LiveData] using the specified [combiner] and returns the
@@ -59,4 +60,14 @@ fun <A, B, C, Result> LiveData<A>.combine(
         }
     }
     return result
+}
+
+/**
+ * Tries to send an element to a Channel and ignores the exception.
+ */
+suspend fun <E> SendChannel<E>.tryOffer(element: E): Boolean = try {
+    send(element)
+    true
+} catch (t: Throwable) {
+    false // Ignore
 }

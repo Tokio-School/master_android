@@ -10,6 +10,8 @@ import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
+import androidx.navigation.NavDirections
+import androidx.navigation.fragment.findNavController
 
 abstract class BaseFragmentDb<DB:ViewDataBinding,VM:BaseViewModel> : Fragment(){
 
@@ -31,9 +33,7 @@ abstract class BaseFragmentDb<DB:ViewDataBinding,VM:BaseViewModel> : Fragment(){
         //implemented in class
     }
 
-    @CallSuper
     open fun setBindingLayout(){
-        Log.e("manel","invocamos al setBinding")
         //implemented in class
     }
 
@@ -57,5 +57,21 @@ abstract class BaseFragmentDb<DB:ViewDataBinding,VM:BaseViewModel> : Fragment(){
     override fun onDestroy() {
         super.onDestroy()
         dataBinding.unbind()
+    }
+
+    /**
+     * Prevent IllegalArgumentException cannot be found from the current destination Destination
+     */
+    protected fun navigate(destination: NavDirections) = with(findNavController()) {
+        currentDestination?.getAction(destination.actionId)
+            ?.let { navigate(destination) }
+    }
+
+    fun navigate(destination: Int, bundle: Bundle? = null) = with(findNavController()) {
+        currentDestination?.getAction(destination)?.let { navigate(destination, bundle) }
+    }
+
+    fun navigateBack() = with(findNavController()) {
+        currentDestination?.let { navigateUp() }
     }
 }
