@@ -3,13 +3,16 @@ package com.tokioschol.travellingkotlin.presentation.features.login.vm
 
 import android.util.Log
 import androidx.lifecycle.*
+import com.facebook.AccessToken
 import com.tokioschol.travellingkotlin.core.base.BaseViewModel
+import com.tokioschol.travellingkotlin.core.base.SingleEvent
 import com.tokioschol.travellingkotlin.core.extension.combine
 import com.tokioschol.travellingkotlin.core.extension.isEmail
 import com.tokioschol.travellingkotlin.core.extension.isValidPass
 import com.tokioschol.travellingkotlin.domain.models.User
 import com.tokioschol.travellingkotlin.domain.repository.LoginRespository
 import com.tokioschol.travellingkotlin.domain.usecase.EjemploUseCase
+import com.tokioschol.travellingkotlin.domain.usecase.GetLogInFacebookUseCase
 import com.tokioschol.travellingkotlin.domain.usecase.GetLogInUseCase
 import com.tokioschol.travellingkotlin.presentation.core.LoadingDelegateViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -22,6 +25,7 @@ import javax.inject.Inject
 @HiltViewModel
 class LoginViewModel @Inject constructor(
     private val getLogInUseCase: GetLogInUseCase,
+    private val getLogInFacebookUseCase: GetLogInFacebookUseCase
 ) : BaseViewModel() {
     val userName = MutableLiveData("")
     val errorUserName = liveData<Boolean> {
@@ -45,7 +49,17 @@ class LoginViewModel @Inject constructor(
             getLogInUseCase.execute(GetLogInUseCase.Params(userName.value?:"",password.value?:""))
                 .onStart { _loading.value = true }
                 .onCompletion { _loading.value = false }
-                .catch { _error.value = it }
+                .catch { _error.value = SingleEvent(it) }
+                .collect{ _user.value = it}
+        }
+    }
+
+    fun logInFacebook(accessToken: AccessToken){
+        viewModelScope.launch {
+            getLogInFacebookUseCase.execute(accessToken)
+                .onStart { _loading.value = true }
+                .onCompletion { _loading.value = false }
+                .catch { _error.value = SingleEvent(it) }
                 .collect{ _user.value = it}
         }
     }

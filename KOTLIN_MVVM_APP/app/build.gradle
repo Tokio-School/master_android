@@ -4,6 +4,8 @@ plugins {
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
     id 'com.google.firebase.crashlytics'
+    id 'androidx.navigation.safeargs'
+    id 'kotlin-parcelize'
 }
 
 android {
@@ -20,8 +22,16 @@ android {
     }
 
     buildTypes {
+        debug{
+            resValue("string", "facebook_app_id", project.property('facebook_app_id22'))
+            resValue("string", "fb_login_protocol_scheme", project.property('fb_login_protocol_scheme'))
+            resValue("string", "facebook_client_token", project.property('facebook_client_token'))
+        }
         release {
             minifyEnabled false
+            resValue("string", "facebook_app_id", project.property('facebook_app_id22'))
+            resValue("string", "fb_login_protocol_scheme", project.property('fb_login_protocol_scheme'))
+            resValue("string", "facebook_client_token", project.property('facebook_client_token'))
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -56,6 +66,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-crashlytics-ktx'
     implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.facebook.android:facebook-login:latest.release'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.1"
+
 
 
     //Cripto

@@ -28,13 +28,8 @@ class LoginRespositoryImpl @Inject constructor(
 
     override fun logInFaceBook(token: AccessToken): Flow<User> = flow {
         kotlin.run {
-            val credential = FacebookAuthProvider.getCredential("123")
+            val credential = FacebookAuthProvider.getCredential(token.token)
             auth.signInWithCredential(credential).await()?.let { authResult ->
-                Log.e("manel","DISPLAYNAME ${authResult.user?.displayName?:"nulo"}")
-                Log.e("manel","PHONE-NUMBER ${authResult.user?.phoneNumber?:"nulo"}")
-                Log.e("manel","FOTO ${authResult.user?.photoUrl?:"nulo"}")
-                Log.e("manel","ADDITIONAL-USER-INFO ${authResult.additionalUserInfo?.profile}")
-
                 emit(User(
                     name = (authResult.additionalUserInfo?.profile?.get("first_name")?:"") as String,
                     surName = (authResult.additionalUserInfo?.profile?.get("last_name")?:"") as String,

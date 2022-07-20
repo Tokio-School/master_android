@@ -1,17 +1,17 @@
 package com.tokioschol.travellingkotlin.core.base
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.CallSuper
 import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.crashlytics.ktx.crashlytics
+import com.google.firebase.ktx.Firebase
 
 abstract class BaseFragmentDb<DB:ViewDataBinding,VM:BaseViewModel> : Fragment(){
 
@@ -37,6 +37,10 @@ abstract class BaseFragmentDb<DB:ViewDataBinding,VM:BaseViewModel> : Fragment(){
         //implemented in class
     }
 
+    open fun showError(message: String?) {
+        //implemented in class
+    }
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         super.onCreateView(inflater, container, savedInstanceState)
@@ -52,6 +56,15 @@ abstract class BaseFragmentDb<DB:ViewDataBinding,VM:BaseViewModel> : Fragment(){
         initViewModels()
         observeViewModels()
         setBindingLayout()
+        handleError()
+    }
+
+    private fun handleError() {
+        viewModel.error.observe(viewLifecycleOwner){
+            it.getContentIfNotHandled()?.let {
+                showError(it.message)
+            }
+        }
     }
 
     override fun onDestroy() {
@@ -70,6 +83,7 @@ abstract class BaseFragmentDb<DB:ViewDataBinding,VM:BaseViewModel> : Fragment(){
     fun navigate(destination: Int, bundle: Bundle? = null) = with(findNavController()) {
         currentDestination?.getAction(destination)?.let { navigate(destination, bundle) }
     }
+
 
     fun navigateBack() = with(findNavController()) {
         currentDestination?.let { navigateUp() }

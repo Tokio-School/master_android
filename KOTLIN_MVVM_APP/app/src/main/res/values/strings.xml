@@ -14,4 +14,10 @@
     <string name="login_hint_pass">Introduce un password</string>
     <string name="login_error_user">El email no es valido</string>
     <string name="error_logIn_service">Ups, no hemos podido %s</string>
+    <string name="cancel_facebook">Had decidido cancelar sesión</string>
+    <string name="error_facebook">Ups, error %s</string>
+    <string name="login_facebook_btn">Facebook</string>
+    <string name="login_toolbar_title">LogIn Travelling</string>
+    <string name="menu_label_hotel">Hoteles</string>
+    <string name="menu_label_locale_hotel">Mapa</string>
 </resources>

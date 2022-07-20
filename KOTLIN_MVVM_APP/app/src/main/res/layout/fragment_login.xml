@@ -82,6 +82,19 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/login_user_facebook_btn"
+                style="@style/Button.Filled.Rounded"
+                android:backgroundTint="@color/com_facebook_blue"
+                app:icon="@drawable/com_facebook_button_icon"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                android:text="@string/login_facebook_btn"
+                android:layout_marginHorizontal="50dp"
+                app:layout_constraintBottom_toTopOf="@+id/login_user"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/login_user"
                 style="@style/Button.Filled.Rounded"
                 android:layout_marginHorizontal="50dp"

@@ -12,4 +12,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="disableBtn">#CE93D8</color>
     <color name="rippleColor">#B39DDB</color>
+    <color name="selected_nav">#F36B6B</color>
 </resources>
