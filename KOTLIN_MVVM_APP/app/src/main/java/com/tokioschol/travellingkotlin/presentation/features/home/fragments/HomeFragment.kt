@@ -11,12 +11,8 @@ class HomeFragment:BaseFragmentDb<FragmentHomeBinding, HomeViewModel>() {
     override val viewModel: HomeViewModel by viewModels()
     override fun getLayout(): Int  = R.layout.fragment_home
 
-    override fun setBindingLayout() {
 
-    }
 
-    override fun eventListeners() {
-    }
 
     override fun initViewModels() {
 

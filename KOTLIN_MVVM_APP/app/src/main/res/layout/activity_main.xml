@@ -15,7 +15,6 @@
             style="@style/Widget.MaterialComponents.Toolbar.Primary"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            app:title="@string/login_toolbar_title"
             app:titleCentered="true" />
     </com.google.android.material.appbar.AppBarLayout>
 

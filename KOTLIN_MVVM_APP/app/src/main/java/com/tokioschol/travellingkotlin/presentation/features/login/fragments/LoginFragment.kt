@@ -53,13 +53,12 @@ class LoginFragment : BaseFragmentDb<FragmentLoginBinding, LoginViewModel>() {
             }
 
             override fun onError(error: FacebookException) {
-                snack(SnackbarMessage(R.string.error_facebook,varargs= error.message)).show()
+                snack(SnackbarMessage(R.string.error_facebook, varargs = error.message)).show()
             }
         })
     }
 
     private fun loginSucess(user: User?) {
-        Log.e("manel", "el usuario es ${user?.name}")
         val directions = LoginFragmentDirections.actionLoginFragmentToMainActivity(user)
         navigate(directions)
     }

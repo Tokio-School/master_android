@@ -14,7 +14,6 @@
 
     <fragment
         android:id="@+id/hotelsMap"
-        android:name="com.tokioschol.travellingkotlin.presentation.features.home.fragments.HotelMapsFragment"
-        android:label="HotelMapsFragment" />
+        android:name="com.tokioschol.travellingkotlin.presentation.features.home.fragments.HotelMapsFragment" />
 
 </navigation>
