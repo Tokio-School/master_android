@@ -11,7 +11,7 @@ import com.tokioschol.travellingkotlin.domain.models.Location
 fun HotelsResponse.matToHotel() =
     results?.map {
         Hotel(
-            img = it?.optimizedThumbUrls?.srpDesktop ?: "",
+            img = it?.optimizedThumbUrls?.srpDesktop?.split("?")?.get(0) ?: "",
             name = it?.name ?: "",
             adress = getAdress(it?.address),
             location = getLocation(it?.coordinate)
