@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TravellingKotlin" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorOnSurface">@color/secondaryDarkColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/secondaryDarkColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="travelingH1">@style/TextAppearance.Travelling.Headline1</item>
+        <item name="travelingH2">@style/TextAppearance.Travelling.Headline2</item>
+        <item name="travelingH3">@style/TextAppearance.Travelling.Headline3</item>
+        <item name="travelingH4">@style/TextAppearance.Travelling.Headline4</item>
+        <item name="travelingH5">@style/TextAppearance.Travelling.Headline5</item>
+        <item name="travelingH6">@style/TextAppearance.Travelling.Headline6</item>
+        <item name="body16">@style/TextAppearance.Travelling.Body1</item>
+        <item name="body14">@style/TextAppearance.Travelling.Body2</item>
+        <item name="body16Inverse">@style/TextAppearance.Travelling.Body1.Inverse</item>
+        <item name="body14Inverse">@style/TextAppearance.Travelling.Body2.Inverse</item>
+        <item name="button_filled">@style/Button.Filled</item>
+        <item name="button_outline">@style/Button.Outlined</item>
+        <item name="rippleColor">@color/rippleColor</item>
+    </style>
+
+    <style name="Theme.TravellingKotlin.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TravellingKotlin.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TravellingKotlin.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

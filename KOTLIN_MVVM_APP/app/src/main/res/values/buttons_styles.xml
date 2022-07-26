@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--SHAPE-APPERANCE BTN AND CHIP-->
+    <style name="ShapeAppearance.Liguilla.Rounded" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Liguilla.Cut" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="textAllCaps">false</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:inset">0dp</item>
+        <item name="strokeColor">@color/btn_stroke_selector</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.MediumComponent</item>
+        <item name="android:textAppearanceButton">@style/TextAppearance.Travelling.Button</item>
+    </style>
+
+    <style name="Button.Filled" parent="Widget.MaterialComponents.Button">
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/btn_filled_text_selector</item>
+        <item name="backgroundTint">@color/btn_filled_selector</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:inset">0dp</item>
+        <item name="android:textAppearanceButton">@style/TextAppearance.Travelling.Button</item>
+    </style>
+
+    <style name="Button.Filled.Cut">
+        <item name="shapeAppearance">@style/ShapeAppearance.Liguilla.Cut</item>
+    </style>
+
+    <style name="Button.Filled.Rounded">
+        <item name="shapeAppearance">@style/ShapeAppearance.Liguilla.Rounded</item>
+    </style>
+</resources>
