@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="travelingH1" format="reference"/>
+    <attr name="travelingH2" format="reference"/>
+    <attr name="travelingH3" format="reference"/>
+    <attr name="travelingH4" format="reference"/>
+    <attr name="travelingH5" format="reference"/>
+    <attr name="travelingH6" format="reference"/>
+    <attr name="body14" format="reference"/>
+    <attr name="body16" format="reference"/>
+    <attr name="body14Inverse" format="reference"/>
+    <attr name="body16Inverse" format="reference"/>
+    <attr name="button_filled" format="reference"/>
+    <attr name="button_outline" format="reference"/>
+</resources>

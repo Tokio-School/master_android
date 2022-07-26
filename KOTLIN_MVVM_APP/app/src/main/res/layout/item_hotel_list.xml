@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="position"
+            type="Integer" />
+        <variable
+            name="adapter"
+            type="com.tokioschol.travellingkotlin.core.base.recycler.BaseRvAdapter" />
+
+        <variable
+            name="item"
+            type="com.tokioschol.travellingkotlin.domain.models.Hotel" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:id="@+id/item_hotel_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="24dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardPreventCornerOverlap="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/item_hotel_img"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                loadImage="@{item.img}"
+                placeHolder="@{@drawable/ic_location}"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/item_hotel_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="?travelingH5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_hotel_img"
+                tools:text="HOTEL UNO" />
+
+            <View
+                android:id="@+id/item_hotel_separate"
+                android:layout_width="0.5dp"
+                android:layout_height="0dp"
+                android:layout_marginVertical="8dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_hotel_name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/item_hotel_street"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textAppearance="?body14"
+                app:layout_constraintBottom_toTopOf="@+id/item_hotel_postal_code"
+                app:layout_constraintEnd_toStartOf="@+id/item_hotel_separate"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_hotel_name"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="direccion hotel" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/item_hotel_postal_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginVertical="6dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textAppearance="?body14"
+                app:layout_constraintBottom_toTopOf="@+id/item_hotel_city"
+                app:layout_constraintEnd_toStartOf="@+id/item_hotel_separate"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_hotel_street"
+                tools:text="codigo postal" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/item_hotel_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginVertical="6dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textAppearance="?body14"
+                app:layout_constraintBottom_toBottomOf="@+id/item_hotel_separate"
+                app:layout_constraintEnd_toStartOf="@+id/item_hotel_separate"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_hotel_postal_code"
+                tools:text="Barcelona" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/item_hotel_price_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?body16"
+                android:text="@string/hotel_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/item_hotel_separate"
+                app:layout_constraintTop_toTopOf="@id/item_hotel_separate" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

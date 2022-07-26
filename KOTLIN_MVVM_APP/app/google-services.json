@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "272266719595",
+    "project_id": "tokiotravelling",
+    "storage_bucket": "tokiotravelling.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272266719595:android:5d61fce3ef6d76f4d41c2e",
+        "android_client_info": {
+          "package_name": "com.tokioschol.travellingkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272266719595-eo205rdmvo8hu85ammse499cn1li57u6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7gOEGeQ-1N_Mmxxq7xBvX-Pdv1TGsAuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272266719595-eo205rdmvo8hu85ammse499cn1li57u6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
