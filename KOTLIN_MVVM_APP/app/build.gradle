@@ -6,6 +6,7 @@ plugins {
     id 'com.google.firebase.crashlytics'
     id 'androidx.navigation.safeargs'
     id 'kotlin-parcelize'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
 android {
@@ -23,12 +24,13 @@ android {
 
     buildTypes {
         debug{
+            minifyEnabled = false
             resValue("string", "facebook_app_id", project.property('facebook_app_id22'))
             resValue("string", "fb_login_protocol_scheme", project.property('fb_login_protocol_scheme'))
             resValue("string", "facebook_client_token", project.property('facebook_client_token'))
         }
         release {
-            minifyEnabled false
+            minifyEnabled true
             resValue("string", "facebook_app_id", project.property('facebook_app_id22'))
             resValue("string", "fb_login_protocol_scheme", project.property('fb_login_protocol_scheme'))
             resValue("string", "facebook_client_token", project.property('facebook_client_token'))
@@ -66,19 +68,20 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-crashlytics-ktx'
     implementation 'com.google.firebase:firebase-auth-ktx'
+    //SDK LOGIN FACEBOOK
     implementation 'com.facebook.android:facebook-login:latest.release'
+
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.1"
 
-
+    //maps
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
 
     //Cripto
     implementation 'androidx.security:security-crypto-ktx:1.1.0-alpha03'
 
     //Dependencias hilt
     implementation 'com.google.dagger:hilt-android:2.42'
-
-
-
     kapt 'com.google.dagger:hilt-compiler:2.42'
 
     //Navigation
