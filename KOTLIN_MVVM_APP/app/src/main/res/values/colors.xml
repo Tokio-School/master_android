@@ -8,7 +8,7 @@
     <color name="secondaryLightColor">#80e27e</color>
     <color name="secondaryDarkColor">#087f23</color>
     <color name="secondaryTextColor">#3e2723</color>
-    <color name="primaryTextColor">#fafafa</color>
+    <color name="primaryTextColor">@color/secondaryTextColor</color>
     <color name="white">#FFFFFFFF</color>
     <color name="disableBtn">#CE93D8</color>
     <color name="rippleColor">#B39DDB</color>

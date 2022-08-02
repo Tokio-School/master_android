@@ -22,4 +22,6 @@
     <string name="menu_label_locale_hotel">Mapa</string>
     <string name="hotel_title">Precios estancia</string>
     <string name="list_hotels_title">Hoteles</string>
+    <string name="error_permission_map">Sin permisos de mapas no podemos continuar</string>
+    <string name="selected_hotel">Hemos seleccionado el Hotel %s</string>
 </resources>

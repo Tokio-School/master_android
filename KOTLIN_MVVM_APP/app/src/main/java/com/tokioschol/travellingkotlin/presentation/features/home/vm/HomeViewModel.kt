@@ -8,6 +8,7 @@ import com.tokioschol.travellingkotlin.core.base.SingleEvent
 import com.tokioschol.travellingkotlin.domain.models.Hotel
 import com.tokioschol.travellingkotlin.domain.usecase.GetListHotelsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.onCompletion
 import kotlinx.coroutines.flow.onStart
@@ -21,6 +22,9 @@ class HomeViewModel @Inject constructor(
 
     private val _hotelList = MutableLiveData<List<Hotel>>()
     val hotelList: LiveData<List<Hotel>> get() = _hotelList
+
+    private val _newListString = MutableLiveData<List<String>>()
+    val newListString: LiveData<List<String>> get() = _newListString
 
     fun loadHotelList() {
         viewModelScope.launch {

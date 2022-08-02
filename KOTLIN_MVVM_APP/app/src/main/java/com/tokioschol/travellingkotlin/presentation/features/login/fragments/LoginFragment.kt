@@ -29,6 +29,7 @@ class LoginFragment : BaseFragmentDb<FragmentLoginBinding, LoginViewModel>() {
     }
 
     override fun setBindingLayout() {
+        Log.e("manel","pruebas")
         dataBinding.viewModel = viewModel
     }
 

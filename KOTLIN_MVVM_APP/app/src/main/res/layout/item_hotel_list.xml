@@ -5,6 +5,7 @@
 
     <data>
 
+        <import type="android.view.View"/>
         <variable
             name="position"
             type="Integer" />
@@ -39,7 +40,6 @@
                 android:layout_height="0dp"
                 loadImage="@{item.img}"
                 placeHolder="@{@drawable/ic_location}"
-                android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_percent="0.7"
                 app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +51,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textAppearance="?travelingH5"
+                android:text="@{item.name}"
+                android:textAppearance="?travelingH6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/item_hotel_img"
@@ -75,6 +76,7 @@
                 android:layout_marginHorizontal="12dp"
                 android:ellipsize="end"
                 android:gravity="center"
+                android:text="@{item.adress.street}"
                 android:textAppearance="?body14"
                 app:layout_constraintBottom_toTopOf="@+id/item_hotel_postal_code"
                 app:layout_constraintEnd_toStartOf="@+id/item_hotel_separate"
@@ -91,6 +93,8 @@
                 android:layout_marginHorizontal="12dp"
                 android:layout_marginVertical="6dp"
                 android:ellipsize="end"
+                android:visibility="@{item.adress.postalCode==null?View.GONE:View.VISIBLE}"
+                android:text="@{item.adress.postalCode}"
                 android:gravity="center"
                 android:textAppearance="?body14"
                 app:layout_constraintBottom_toTopOf="@+id/item_hotel_city"
@@ -108,6 +112,7 @@
                 android:layout_marginVertical="6dp"
                 android:ellipsize="end"
                 android:gravity="center"
+                android:text="@{item.adress.city}"
                 android:textAppearance="?body14"
                 app:layout_constraintBottom_toBottomOf="@+id/item_hotel_separate"
                 app:layout_constraintEnd_toStartOf="@+id/item_hotel_separate"
