@@ -10,12 +10,11 @@ import com.tokioschol.travellingkotlin.core.extension.autoNotify
 import kotlin.properties.Delegates
 
 typealias OnClickItem<T> = ((T?) -> Unit)
-
 class BaseRvAdapter<T : Any>(
     private val dataview: Int,
     items: List<T>? = emptyList(),
     private val viewmodel: BaseViewModel? = null,
-    private val itemClick: ((T?) -> Unit),
+    private val itemClick: OnClickItem<T>,
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     var items: List<T> by Delegates.observable(items ?: emptyList()) { _, old, new ->
@@ -38,7 +37,7 @@ class BaseRvAdapter<T : Any>(
             holder.binding.setVariable(BR.adapter, this)
             holder.binding.setVariable(BR.position, position)
             holder.bind(items[position])
-            holder.itemView.setOnClickListener { view ->
+            holder.itemView.setOnClickListener { _ ->
                 itemClick(items[position])
             }
         }
