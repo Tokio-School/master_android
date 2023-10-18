@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
         recuperarComponentesVista();
 
-
        /* datos.add("Pepe");
         datos.add("Juan");
         datos.add("Victor");*/

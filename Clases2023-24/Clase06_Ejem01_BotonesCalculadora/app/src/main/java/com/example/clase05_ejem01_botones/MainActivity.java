@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ((Button) findViewById(R.id.b_ac)).setOnClickListener(this);
         ((Button) findViewById(R.id.b_igual)).setOnClickListener(this);
 
+
         for (int i = 0; i < 10; i++) {
             listaBotones.add((Button) findViewById(
                     getResources().getIdentifier("b_" + i, "id", getPackageName())
@@ -44,7 +46,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             boton.setOnClickListener(this);
         }
 
-
         anadirBotonEnTiempoEjecucion();
 
     }
@@ -52,6 +53,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void anadirBotonEnTiempoEjecucion() {
         Button boton=new Button(this);
         boton.setText("Saludar");
+        // Make the same style as the other Main Activitys button
+
+
+
+
+
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          With Android Gradle Plugin 8.0.0 all your R-class resources are by default no longer declared as final/constant (hence won't work in switch statements). If you use the AGP upgrade wizard in Android Studio, it will actually add this line to your gradle.properties to keep the old behavior:
         android.nonFinalResIds=false
          */
-        final int SUMA=R.id.b_sumar;
+        /*
         switch (v.getId())
         {
             case SUMA:
@@ -80,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
 
-        }
+        }*/
         if (v.getId() == R.id.b_sumar) {
             seleccionarOperador((Button) v);
         } else if (v.getId() == R.id.b_restar) {
