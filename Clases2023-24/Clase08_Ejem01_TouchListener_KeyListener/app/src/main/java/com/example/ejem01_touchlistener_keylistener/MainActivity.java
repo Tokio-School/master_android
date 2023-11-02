@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 if (motionEvent.getPointerCount()>1) {
                     int accion = motionEvent.getAction();
                     int codigoAccion = accion & MotionEvent.ACTION_MASK;
+
                     salida.append(acciones[codigoAccion]);
                     for (int i = 0; i < motionEvent.getPointerCount(); i++) {
                        /* salida.append(" puntero:" + motionEvent.getPointerId(i) +
@@ -81,7 +83,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        TextView texto_largo=((TextView)findViewById(R.id.tv_datosConScroll));
+        texto_largo.setMovementMethod(new android.text.method.ScrollingMovementMethod());
+        ((Button)findViewById(R.id.b_meterDatosLargos)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String cadena=((EditText)findViewById(R.id.et_recogidaDatos)).getText().toString();
+                texto_largo.append(cadena);
+            }
+        });
 
 
 

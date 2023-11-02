@@ -1,6 +1,7 @@
 package com.example.clase05_ejem01_botones;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -52,8 +53,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void anadirBotonEnTiempoEjecucion() {
         Button boton=new Button(this);
+        boton.setBackgroundColor(ContextCompat.getColor(this,android.R.color.holo_blue_light));
+        boton.setTextColor(ContextCompat.getColor(this,android.R.color.white));
+
         boton.setText("Saludar");
         // Make the same style as the other Main Activitys button
+
 
 
 
