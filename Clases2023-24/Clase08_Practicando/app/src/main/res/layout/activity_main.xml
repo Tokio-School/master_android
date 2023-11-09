@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lv_datos"
+        android:layout_width="match_parent"
+        android:layout_height="452dp"
+        android:choiceMode="multipleChoice"
+        android:entries="@array/planets_array" >
+
+    </ListView>
+
+    <Spinner
+        android:id="@+id/sp_listadoSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/planets_array"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/tv_recuperarTouchListener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Recuperar con TouchListener"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/b_recuperarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recuperar datos" />
+
+</LinearLayout>

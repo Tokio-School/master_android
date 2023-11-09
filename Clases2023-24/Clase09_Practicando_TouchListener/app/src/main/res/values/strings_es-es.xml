@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Clase09_Practicando_TouchListener</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="tv_nombre">Nombre:</string>
+    <string name="name_hint">Nombre</string>
+    <string name="tv_edad">Edad:</string>
+    <string name="et_edad">Edad</string>
+    <string name="tv_ciudad">Ciudad:</string>
+    <string name="btt_grabar">GRABAR</string>
+    <string name="tv_borrar">BORRAR</string>
+
+    <array name="ciudades">
+        <item>Valladolid</item>
+        <item>Madrid</item>
+        <item>Salamanca</item>
+    </array>
+</resources>

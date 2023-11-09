@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Ejer01_calculadora" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="BotonEstilo" parent="android:Widget.Button">
+        <!-- Define aquí los atributos visuales que coinciden con el estilo global de la aplicación. -->
+    </style>
+
+    <style name="Theme.Ejer01_calculadora" parent="Base.Theme.Ejer01_calculadora" />
+</resources>

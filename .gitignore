@@ -20,5 +20,4 @@ workspace.xml
 local.properties
 /.idea/jarRepositories.xml
 /.idea/vcs.xml
-*.xml
 .name
