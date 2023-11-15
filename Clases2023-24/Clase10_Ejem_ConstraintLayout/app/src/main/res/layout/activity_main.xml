@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_panelPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <Button
+        android:id="@+id/b_boton1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/b_boton2"
+        app:layout_constraintStart_toStartOf="@id/cl_panelPrincipal"
+        app:layout_constraintTop_toTopOf="@id/cl_panelPrincipal" />
+
+    <Button
+        android:id="@+id/b_boton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintBottom_toBottomOf="@+id/b_boton1"
+        app:layout_constraintEnd_toStartOf="@+id/b_boton3"
+        app:layout_constraintStart_toEndOf="@id/b_boton1"
+        app:layout_constraintTop_toTopOf="@+id/b_boton1" />
+
+    <Button
+        android:id="@+id/b_boton3"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_weight="4"
+        android:layout_height="wrap_content"
+        android:text="3"
+
+        app:layout_constraintBottom_toBottomOf="@+id/b_boton2"
+        app:layout_constraintEnd_toEndOf="@id/cl_panelPrincipal"
+        app:layout_constraintStart_toEndOf="@id/b_boton2"
+        app:layout_constraintTop_toTopOf="@+id/b_boton2" />
+
+    <Button
+        android:id="@+id/b_boton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        app:layout_constraintTop_toBottomOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="@id/b_boton2"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="@id/cl_panelPrincipal"
+
+ />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_datosPersonales"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/b_boton4"
+        app:layout_constraintBottom_toBottomOf="@id/cl_panelPrincipal"
+        app:layout_constraintStart_toStartOf="@id/cl_panelPrincipal"
+        app:layout_constraintEnd_toEndOf="@id/cl_panelPrincipal"
+        app:layout_constraintVertical_bias="0.2"
+        app:cardCornerRadius="40dp"
+        android:elevation="10dp"
+        android:backgroundTint="@color/color_victor"
+
+
+ >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+
+
+            >
+
+            <TextView
+                android:id="@+id/tv_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/cl_cardView"
+                app:layout_constraintBottom_toBottomOf="@id/cl_cardView"
+                app:layout_constraintStart_toStartOf="@id/cl_cardView"
+                android:text="Nombre:"
+                android:textSize="30dp"
+                 />
+            <TextView
+                android:id="@+id/tv_nombreValor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/cl_cardView"
+                app:layout_constraintBottom_toBottomOf="@id/cl_cardView"
+                app:layout_constraintStart_toEndOf="@id/tv_nombre"
+                app:layout_constraintEnd_toEndOf="@id/cl_cardView"
+                android:text="Víctor Vergel"
+                android:textSize="30dp"
+                 />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,10 +3,10 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.ejer10_menuaplicacionycontextual"
+        applicationId "com.example.Clase10_MenuAplicacionContextual"
         minSdk 30
         targetSdk 31
         versionCode 1
@@ -25,6 +25,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    namespace 'com.example.Clase10_MenuAplicacionContextual'
 }
 
 dependencies {

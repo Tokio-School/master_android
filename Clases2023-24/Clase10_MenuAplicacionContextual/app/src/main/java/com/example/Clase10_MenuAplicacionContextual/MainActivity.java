@@ -2,6 +2,7 @@ package com.example.Clase10_MenuAplicacionContextual;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -33,7 +34,11 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout fonpri = (LinearLayout)findViewById(R.id.ly_panelFondo);
         switch (item.getItemId()){
             case R.id.limpiar:
-                fonpri.setBackgroundColor(Color.WHITE);
+                //fonpri.setBackgroundColor(Color.GREEN);
+                //API Level 23
+                //fonpri.setBackgroundColor(getResources().getColor(R.color.color_victor));
+                fonpri.setBackgroundColor(ContextCompat.getColor(this,R.color.color_victor));
+
         }
 
         return super.onContextItemSelected(item);
