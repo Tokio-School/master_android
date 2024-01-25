@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDDC39"
+    android:orientation="vertical"
+    tools:context=".FragmentUno">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_datoRecibido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_datoFragmentAActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Dato de fragment a Activity"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/b_fragmenTOactivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar a Activity" />
+
+    <Button
+        android:id="@+id/b_fragmentTOfragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar a Fragment" />
+
+</LinearLayout>
