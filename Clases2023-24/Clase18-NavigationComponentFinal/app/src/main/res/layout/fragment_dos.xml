@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    android:orientation="vertical"
+    tools:context=".FragmentDos">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="2"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/tv_datoRecibidoPorListener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_datoRecibido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/b_fragDos_IrAlTres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir al fragment Tres" />
+
+    <Button
+        android:id="@+id/b_fragDos_IrAlUno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir al fragment Uno" />
+
+</LinearLayout>
