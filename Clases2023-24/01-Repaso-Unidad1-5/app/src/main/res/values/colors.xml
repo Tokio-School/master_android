@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="micolorprimario">#88CC88</color>
+    <color name="micolorprimarioOscuro">#004400</color>
+    <color name="micolorSeleccion">#2D882D</color>
+    <color name="micolorcontenedor">#D5FDD5</color>
+
+</resources>
