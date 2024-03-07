@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Texto en idioma"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/b_preguntarPorIdioma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preguntar por idioma" />
+
+    <Button
+        android:id="@+id/b_solicitarIdioma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Solicitar idiomas" />
+
+    <Button
+        android:id="@+id/b_llamada2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Llamada Segunda API" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

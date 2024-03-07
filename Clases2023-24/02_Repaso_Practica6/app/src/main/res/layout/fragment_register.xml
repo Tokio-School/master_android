@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentRegister">
+
+    <include
+        android:id="@+id/mi_toolbar"
+        layout="@layout/mi_toolbar" />
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment Register"
+        android:textSize="48sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_textoADevolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inserte nombre" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/datos_desplegable"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/b_fragmentVolverALogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver a Login" />
+
+</LinearLayout>
