@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_final.xml"
+    app:startDestination="@id/fragmentTres">
+
+
+    <fragment
+        android:id="@+id/fragmentTres"
+        android:name="com.example.practica10_dosnivelesnavegacion.FragmentTres"
+        android:label="fragment_tres"
+        tools:layout="@layout/fragment_tres" >
+        <action
+            android:id="@+id/action_fragmentTres_to_fragmentCuatro"
+            app:destination="@id/fragmentCuatro" />
+        <action
+            android:id="@+id/xml"
+            app:destination="@id/nav_inicial.xml" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentCuatro"
+        android:name="com.example.practica10_dosnivelesnavegacion.FragmentCuatro"
+        android:label="fragment_cuatro"
+        tools:layout="@layout/fragment_cuatro">
+        <action
+            android:id="@+id/action_fragmentCuatro_to_fragmentTres"
+            app:destination="@id/fragmentTres" />
+        <deepLink
+            android:id="@+id/deepLinkDestination"
+            app:uri="www.victor.com/{valor}" />
+        <argument
+            android:name="valor"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+
+</navigation>
