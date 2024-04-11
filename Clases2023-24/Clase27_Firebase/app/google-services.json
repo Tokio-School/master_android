@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1047391064378",
+    "project_id": "tokio2324-bdab4",
+    "storage_bucket": "tokio2324-bdab4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047391064378:android:9e0a44033f7da15185c003",
+        "android_client_info": {
+          "package_name": "com.example.clase27_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAojqiUeVmKGdbxmEUn-AvZv_Z4Zgu2g70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
