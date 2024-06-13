@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cl_principal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_listaCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista compra:"
+        android:textSize="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/lv_compra"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+    <ListView
+        android:id="@+id/lv_compra"
+        android:layout_width="413dp"
+        android:layout_height="400dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_listaCompra"
+        app:layout_constraintBottom_toTopOf="@id/tel_producto"
+        tools:ignore="MissingConstraints">
+
+    </ListView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tel_producto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Introduzca producto"
+        app:boxBackgroundColor="#FFFFFF"
+        app:boxBackgroundMode="outline"
+        app:layout_constraintStart_toStartOf="@id/cl_principal"
+        app:layout_constraintTop_toBottomOf="@id/lv_compra"
+        app:layout_constraintVertical_weight="0.1"
+        app:startIconDrawable="@drawable/ic_product"
+        app:startIconTint="#F44336">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_producto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tel_precio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Introduzca precio"
+        app:layout_constraintStart_toStartOf="@id/cl_principal"
+        app:layout_constraintTop_toBottomOf="@id/tel_producto"
+        app:startIconDrawable="@drawable/ic_precio"
+        app:startIconTint="#FF0000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/b_aniadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tel_precio"
+        app:layout_constraintStart_toStartOf="@id/cl_principal"
+        android:text="Añadir" />
+
+    <Button
+        android:id="@+id/b_borrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/b_aniadir"
+        app:layout_constraintEnd_toEndOf="@id/cl_principal"
+        android:text="Borrar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

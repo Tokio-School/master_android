@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="saludoPlural">
+        <item quantity="one">Hola %1s se que tienes %2d año</item>
+        <item quantity="other">Hola %1s se que tienes %2d años</item>
+    </plurals>
+
+</resources>

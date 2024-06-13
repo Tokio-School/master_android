@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="person" type="com.example.clase13_databinding.Persona" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@={person.nombre}"
+            android:hint="Inserte nombre"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(person.edad)}"
+            android:ems="10"
+            android:hint="Inserte Edad"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <CheckBox
+            android:id="@+id/cb_soltero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="@{person.soltero}"
+            android:text="Soltero" />
+
+        <Spinner
+            android:id="@+id/s_deportes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@{person.listaDeportes}"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/b_guardarDAtos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar datos" />
+
+        <TextView
+            android:id="@+id/tv_nombre"
+            android:text="@={person.nombre}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_edad"
+            android:text="@{String.valueOf(person.edad)}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_estadoCivil"
+            android:text="@{person.soltero ? &quot;Soltero&quot; : &quot;Casado&quot;}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</layout>

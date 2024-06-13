@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion.xml"
+    app:startDestination="@id/fragmentUno">
+
+    <fragment
+        android:id="@+id/fragmentUno"
+        android:name="com.example.clase18_navigationcomponentfinal.FragmentUno"
+        android:label="fragment_uno"
+        tools:layout="@layout/fragment_uno" >
+        <action
+            android:id="@+id/action_fragmentUno_to_fragmentDos"
+            app:destination="@id/fragmentDos"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDos"
+        android:name="com.example.clase18_navigationcomponentfinal.FragmentDos"
+        android:label="fragment_dos"
+        tools:layout="@layout/fragment_dos" >
+        <action
+            android:id="@+id/action_fragmentDos_to_fragmentTres"
+            app:destination="@id/fragmentTres" />
+        <action
+            android:id="@+id/action_fragmentDos_to_fragmentUno"
+            app:destination="@id/fragmentUno" />
+        <argument
+            android:name="dato"
+            app:argType="string"
+            android:defaultValue="Nada" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTres"
+        android:name="com.example.clase18_navigationcomponentfinal.FragmentTres"
+        android:label="fragment_tres"
+        tools:layout="@layout/fragment_tres" >
+        <action
+            android:id="@+id/action_fragmentTres_to_fragmentDos"
+            app:destination="@id/fragmentDos" />
+    </fragment>
+</navigation>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Clase06_Ejem02_RecuperandoRG_CB_LV</string>
+
+    <string name="text_ciudad">Ciudad de Nacimiento:</string>
+    <string name="text_autonoma">Comunidad autonoma:</string>
+    <string name="recuperar_datos">Recuperar datos</string>
+    <string-array name="ciudades">
+        <item>Madrid</item>
+        <item>Sevilla</item>
+        <item>Valladolid</item>
+        <item>Zaragoza</item>
+    </string-array>
+</resources>

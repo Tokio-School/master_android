@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RepasoAplicacionGastos</string>
+    <string name="title_login">Gastos Familiares</string>
+    <string name="username">Inserte nombre usuario</string>
+    <string name="password">Inserte la contraseña</string>
+    <string name="entrar">Login</string>
+    <string name="guardar_usuario">Active para registrarse también</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_category">Categoría</string>
+    <string name="hint_concept">inserte concepto gasto</string>
+    <string name="hint_date">Inserte fecha gasto</string>
+    <string name="hint_price">Inserte precio de gasto</string>
+    <string name="button_register">Registrar gasto</string>
+</resources>
