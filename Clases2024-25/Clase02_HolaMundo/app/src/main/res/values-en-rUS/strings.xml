@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Class02_HelloWorld</string>
+    <string name="_18_a_os">18 years old</string>
+    <string name="profesor_inform_tica">Computing teacher</string>
+    <string name="jugador_baloncesto">Basketball player</string>
+    <string name="recupera_datos">Recupera datos</string>
+    <string name="inserte_contrase_a">Inserte contraseña</string>
+    <string name="inserte_su_nombre">Inserte su nombre</string>
+</resources>

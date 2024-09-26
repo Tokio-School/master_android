@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Clase02_HolaMundo</string>
+    <string name="_18_a_os">18 años</string>
+    <string name="profesor_inform_tica">Profesor informática</string>
+    <string name="jugador_baloncesto">Jugador baloncesto</string>
+    <string name="recupera_datos">Recupera datos</string>
+    <string name="inserte_contrase_a">Inserte contraseña</string>
+    <string name="inserte_su_nombre">Inserte su nombre</string>
+</resources>
