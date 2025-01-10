@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="TextView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_dato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_dato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inserte dato a enviar" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/b_cargarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="Cargar fragment" />
+
+    <Button
+        android:id="@+id/b_reemplazarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="Reemplazar fragment" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:layout_margin="4dp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="com.example.clase09_fragments.Fragment3"
+        android:layout_width="match_parent"
+        android:layout_height="326dp" />
+
+    <!-- android:name="com.example.clase09_fragments.Fragment1"-->
+</LinearLayout>

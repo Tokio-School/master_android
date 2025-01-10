@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    android:orientation="vertical"
+    tools:context=".Fragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_mensaje2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hola mundo desde Fragment2"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/b_saludar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saludar2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_datoEnviarFragment3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Inserta dato para enviar al fragment 3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/b_envairFragment3Dato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Fragment 3 un dato" />
+
+</LinearLayout>
