@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion"
+    app:startDestination="@id/fragmentUno">
+
+    <fragment
+        android:id="@+id/fragmentUno"
+        android:name="com.example.clase10_navegacionfragments.FragmentUno"
+        android:label="fragment_uno"
+        tools:layout="@layout/fragment_uno" >
+        <action
+            android:id="@+id/action_fragmentUno_to_fragmentDos"
+            app:destination="@id/fragmentDos" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDos"
+        android:name="com.example.clase10_navegacionfragments.FragmentDos"
+        android:label="fragment_dos"
+        tools:layout="@layout/fragment_dos" >
+        <action
+            android:id="@+id/action_fragmentDos_to_fragmentUno"
+            app:destination="@id/fragmentUno" />
+        <action
+            android:id="@+id/action_fragmentDos_to_fragmentTres"
+            app:destination="@id/fragmentTres" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTres"
+        android:name="com.example.clase10_navegacionfragments.FragmentTres"
+        android:label="fragment_tres"
+        tools:layout="@layout/fragment_tres" >
+        <action
+            android:id="@+id/action_fragmentTres_to_fragmentDos"
+            app:destination="@id/fragmentDos" />
+    </fragment>
+</navigation>
