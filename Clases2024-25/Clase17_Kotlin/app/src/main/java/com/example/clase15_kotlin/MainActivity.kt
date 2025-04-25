@@ -6,11 +6,13 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.AdapterView.OnItemClickListener
 import android.widget.ArrayAdapter
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.clase15_kotlin.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
 
@@ -34,15 +36,11 @@ class MainActivity : AppCompatActivity() {
         Snackbar.make(binding.root,persona2.saludar(persona), Snackbar.LENGTH_LONG).show()
 
 
-        binding.bGuardar.setOnClickListener(){
-            val datoPersona:Persona=Persona(binding.tietNombre.text.toString(),
-            binding.tietEdad.text.toString().toInt(),
-            binding.tietPeso.text.toString().toDouble())
-            Snackbar.make(binding.root,datoPersona.toString(), Snackbar.LENGTH_LONG).show()
-        }
 
 //        val personas:HashMap<String, Persona> = HashMap()
-        val personas:ArrayList<Persona> = ArrayList()
+        //val personas:ArrayList<Persona> = ArrayList()
+        //mutabletListOf<Persona>()
+        val personas= mutableListOf<Persona>()
         personas.add(persona)
         personas.add(persona2)
         personas.add(persona3)
@@ -60,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(binding.root,"Son diferentes", Snackbar.LENGTH_LONG).show()
 
 
-        binding.lvDatosPersonas.adapter=ArrayAdapter(this,android.R.layout.simple_list_item_1,personas).also { adapter->
+       /* binding.lvDatosPersonas.adapter=ArrayAdapter(this,android.R.layout.simple_list_item_1,personas).also { adapter->
             binding.lvDatosPersonas.adapter=adapter
         }
         binding.lvDatosPersonas.onItemClickListener=object: OnItemClickListener{
@@ -69,7 +67,7 @@ class MainActivity : AppCompatActivity() {
                 Snackbar.make(binding.root,"El nombre es: ${personaSeleccionada.nombre}"+"- ${personaSeleccionada.edad}", Snackbar.LENGTH_LONG).show()
             }
 
-        }
+        }*/
 
         /*ArrayAdapter(this,android.R.layout.simple_spinner_item,personas).also { adapter->
             binding.spDatosUsuarios.adapter=adapter
@@ -119,6 +117,25 @@ class MainActivity : AppCompatActivity() {
         //Creacion de una Mascota para la persona
         var mascota:Persona.Mascota=persona.Mascota("Perro", 5)
 
+
+        binding.rvDatosPersonas.adapter=AdaptadorPersona(personas)
+        binding.rvDatosPersonas.layoutManager=LinearLayoutManager(this)
+
+
+
+
+        binding.bGuardar.setOnClickListener(){
+            val datoPersona:Persona=Persona(binding.tietNombre.text.toString(),
+                binding.tietEdad.text.toString().toInt(),
+                binding.tietPeso.text.toString().toDouble())
+            Snackbar.make(binding.root,datoPersona.toString(), Snackbar.LENGTH_LONG).show()
+
+            personas.add(datoPersona)
+           // binding.rvDatosPersonas.adapter?.notifyDataSetChanged()
+            binding.rvDatosPersonas.adapter?.notifyItemInserted(personas.size-1)
+
+
+        }
 
 
     }

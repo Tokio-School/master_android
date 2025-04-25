@@ -64,8 +64,17 @@
     <ListView
         android:id="@+id/lv_datosPersonas"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="5dp" />
+        android:layout_height="156dp"
+        android:layout_margin="5dp">
+
+
+    </ListView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_DatosPersonas"
+        tools:listitem="@layout/persona"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>
