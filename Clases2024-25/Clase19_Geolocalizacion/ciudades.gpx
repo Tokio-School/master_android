@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="ChatGPT" xmlns="http://www.topografix.com/GPX/1/1">
+  <wpt lat="40.4168" lon="-3.7038">
+    <name>Madrid</name>
+  </wpt>
+  <wpt lat="41.3879" lon="2.16992">
+    <name>Barcelona</name>
+  </wpt>
+  <wpt lat="39.4699" lon="-0.3763">
+    <name>Valencia</name>
+  </wpt>
+  <wpt lat="37.3886" lon="-5.9823">
+    <name>Sevilla</name>
+  </wpt>
+  <wpt lat="43.2630" lon="-2.9350">
+    <name>Bilbao</name>
+  </wpt>
+</gpx>
