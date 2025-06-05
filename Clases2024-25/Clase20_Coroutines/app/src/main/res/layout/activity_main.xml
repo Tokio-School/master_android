@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ProgressBar
+        android:id="@+id/pb_barra"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="inserte nombre"
+            android:id="@+id/tiet_nombre"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/b_iniciarProgreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar barra desplazamiento" />
+
+    <Button
+        android:id="@+id/b_almacenarBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar en BD" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shimmer"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.1"
+            android:background="#C1C0C0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+                    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.1"
+            android:background="#C1C0C0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+                    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.1"
+            android:background="#C1C0C0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+                    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.1"
+            android:background="#C1C0C0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+                    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.1"
+            android:background="#C1C0C0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+                    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.1"
+            android:background="#C1C0C0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+                    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.1"
+            android:background="#C1C0C0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+                    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.1"
+            android:background="#C1C0C0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+                    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.1"
+            android:background="#C1C0C0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+                    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.1"
+            android:background="#C1C0C0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <ListView
+        android:id="@+id/lv_datos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
