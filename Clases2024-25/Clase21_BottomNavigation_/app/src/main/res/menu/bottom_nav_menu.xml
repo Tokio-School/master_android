@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragmentUno"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Uno" />
+
+    <item
+        android:id="@+id/fragmentDos"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Dos" />
+
+    <item
+        android:id="@+id/fragmentTres"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Tres" />
+
+    <item
+        android:id="@+id/fragmentCuatro"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Cuatro" />
+
+</menu>
