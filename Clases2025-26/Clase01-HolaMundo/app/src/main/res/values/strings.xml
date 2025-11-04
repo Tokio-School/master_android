@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mi aplicacion</string>
+    <string name="insert_name">Inserte nombre</string>
+    <string name="saludo_inicial">Hola mundo</string>
+    <string name="direccion">Inserte la direccion</string>
+    <string name="b_recogerDatos">Recoger datos</string>
+    <string name="b_activar_boton">Activar Boton\t</string>
+    <string-array name="opciones_spinner">
+        <item>Opcion 1</item>
+        <item>Opcion 2</item>
+        <item>Opcion 3</item>
+        <item>Opcion 4</item>
+        <item>Opcion 5</item>
+    </string-array>
+</resources>

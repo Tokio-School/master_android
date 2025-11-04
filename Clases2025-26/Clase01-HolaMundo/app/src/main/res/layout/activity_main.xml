@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_saludoInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saludo_inicial" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/insert_name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/direccion" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tiet_edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edad" />
+
+        <TextView
+            android:id="@+id/tv_opciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elige una opción:" />
+        <RadioGroup
+            android:id="@+id/rg_opciones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/opcion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Opcion1" />
+            <RadioButton
+                android:id="@+id/opcion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Opcion2" />
+            <RadioButton
+                android:id="@+id/opcion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Opcion3" />
+
+
+        </RadioGroup>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/b_recogidaDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/b_recogerDatos" />
+
+    <Switch
+        android:id="@+id/s_actibarBoton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/b_activar_boton"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/s_desplegable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/opciones_spinner"
+        android:minHeight="48dp" />
+
+
+</LinearLayout>

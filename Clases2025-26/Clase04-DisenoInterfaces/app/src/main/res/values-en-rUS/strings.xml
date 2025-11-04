@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clase04-DisenoInterfaces</string>
+    <string name="mensaje_insercion_nombre" >Insert name</string>
+    <string name="boton_saludo">Hello</string>
+    <string name="boton_adios">Goodby</string>
+</resources>
