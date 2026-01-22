@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clase09Repaso</string>
+    <string name="boton_anadir">Add</string>
+    <string name="insertar_texto">Insert text</string>
+</resources>

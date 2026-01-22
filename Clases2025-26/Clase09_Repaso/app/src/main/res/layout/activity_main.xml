@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="datoNombre"
+            type="com.example.clase09repaso.Dato" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="@={datoNombre.nombre}"
+                android:hint="@string/insertar_texto" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/b_anadir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="@string/boton_anadir" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="Button" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="TextView" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:columnCount="4">
+
+            <Button
+                android:id="@+id/b_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="2dp"
+                android:text="1"
+                app:layout_columnSpan="2"
+                app:layout_gravity="fill_horizontal|fill_vertical"
+                app:layout_rowSpan="2" />
+
+            <Button
+                android:id="@+id/b_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="2"
+                app:layout_gravity="fill_horizontal" />
+
+            <Button
+                android:id="@+id/b_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="3"
+                app:layout_gravity="fill_horizontal" />
+
+            <Button
+                android:id="@+id/b_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="4"
+                app:layout_columnSpan="2"
+                app:layout_gravity="fill_horizontal" />
+
+            <Button
+                android:id="@+id/b_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="5"
+                app:layout_gravity="fill_horizontal" />
+
+            <Button
+                android:id="@+id/b_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="6"
+                app:layout_columnSpan="2"
+                app:layout_gravity="fill_horizontal" />
+
+            <Button
+                android:id="@+id/b_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="7"
+                app:layout_gravity="fill_horizontal" />
+
+            <Button
+                android:id="@+id/b_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="8"
+                app:layout_columnSpan="4"
+                app:layout_gravity="fill_horizontal" />
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <ListView
+            android:id="@+id/lv_datos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Clase09Repaso</string>
+    <string name="boton_anadir">Añadir (espanol)</string>
+    <string name="insertar_texto">Inserte texto</string>
+</resources>

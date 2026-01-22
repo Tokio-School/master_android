@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="user"
+            type="com.example.clase10_permisosViewmodel.Usuario" />
+        <variable name="contadorNormal"
+            type="com.example.clase10_permisosViewmodel.Contador" />
+        <variable name="contadorViewModel"
+            type="com.example.clase10_permisosViewmodel.ContadorViewmodel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingTop="30dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Inserte nombre"
+                    android:text="@{user.nombre}" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_edad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Inserte edad"
+                    android:text='@{String.valueOf(user.edad)}' />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/b_enviarUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Enviar usuario" />
+
+            <Button
+                android:id="@+id/b_lanzarNavegador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lanzar navegador" />
+
+            <Button
+                android:id="@+id/b_llamarTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Llamar por teléfono" />
+
+            <Button
+                android:id="@+id/b_lanzarGoogleMaps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lanzar Maps" />
+
+            <Button
+                android:id="@+id/b_recuperarContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recuperar Contacto" />
+
+            <ImageView
+                android:id="@+id/iv_fotoCamara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/b_lanzarCamara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lanzar Cámara" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_contadorViewmodel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(contadorViewModel.numero)}" />
+
+                <Button
+                    android:id="@+id/b_incrementarContadorViewmodel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Incrementar Contador Viewmodel" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_contadorNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(contadorNormal.numero)}" />
+
+                <Button
+                    android:id="@+id/b_incrementarNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Incrementar normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>
