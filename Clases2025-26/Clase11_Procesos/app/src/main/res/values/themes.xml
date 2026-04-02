@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Clase11_Procesos" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Clase11_Procesos" parent="Base.Theme.Clase11_Procesos" />
+
+    <style name="MiEstilo" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:height">60dp</item>
+    </style>
+</resources>

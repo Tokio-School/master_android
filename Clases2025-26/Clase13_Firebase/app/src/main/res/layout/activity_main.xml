@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="persona"
+            type="com.example.clase13_firebase.Persona" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Nombre"
+                android:text="@={persona.nombre}"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Edad"
+                android:text="@{String.valueOf(persona.edad)}"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="Apellido"
+                android:text="@={persona.apellido}"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/b_guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/b_eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Eliminar" />
+
+        <Button
+            android:id="@+id/b_actualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Actualizar" />
+
+        <Button
+            android:id="@+id/b_recuperar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recuperar" />
+
+        <Button
+            android:id="@+id/b_registrarAcceso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loguearse" />
+
+        <Button
+            android:id="@+id/b_datosGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="DatosGoogle" />
+
+        <Button
+            android:id="@+id/b_cerrarSesionGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar sesión Google" />
+    </LinearLayout>
+</layout>
